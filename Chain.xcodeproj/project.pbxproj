@@ -32,8 +32,8 @@
 		92AF55F11AFE780600207347 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF55EF1AFE780600207347 /* Bolts.framework */; };
 		92AF55F21AFE780600207347 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF55F01AFE780600207347 /* Parse.framework */; };
 		92AF55F61AFE886900207347 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF55F51AFE886900207347 /* BaseModel.m */; };
-		92AF55F91AFE88C600207347 /* ItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF55F81AFE88C600207347 /* ItemsModel.m */; };
-		92AF55FC1AFE896100207347 /* RetailersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF55FB1AFE896100207347 /* RetailersModel.m */; };
+		92AF55F91AFE88C600207347 /* Beacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF55F81AFE88C600207347 /* Beacon.m */; };
+		92AF55FC1AFE896100207347 /* Retailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF55FB1AFE896100207347 /* Retailer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +82,10 @@
 		92AF55F01AFE780600207347 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		92AF55F41AFE886900207347 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		92AF55F51AFE886900207347 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		92AF55F71AFE88C600207347 /* ItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsModel.h; sourceTree = "<group>"; };
-		92AF55F81AFE88C600207347 /* ItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsModel.m; sourceTree = "<group>"; };
-		92AF55FA1AFE896100207347 /* RetailersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetailersModel.h; sourceTree = "<group>"; };
-		92AF55FB1AFE896100207347 /* RetailersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetailersModel.m; sourceTree = "<group>"; };
+		92AF55F71AFE88C600207347 /* Beacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beacon.h; sourceTree = "<group>"; };
+		92AF55F81AFE88C600207347 /* Beacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beacon.m; sourceTree = "<group>"; };
+		92AF55FA1AFE896100207347 /* Retailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retailer.h; sourceTree = "<group>"; };
+		92AF55FB1AFE896100207347 /* Retailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Retailer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,10 +205,10 @@
 			children = (
 				92AF55F41AFE886900207347 /* BaseModel.h */,
 				92AF55F51AFE886900207347 /* BaseModel.m */,
-				92AF55F71AFE88C600207347 /* ItemsModel.h */,
-				92AF55F81AFE88C600207347 /* ItemsModel.m */,
-				92AF55FA1AFE896100207347 /* RetailersModel.h */,
-				92AF55FB1AFE896100207347 /* RetailersModel.m */,
+				92AF55F71AFE88C600207347 /* Beacon.h */,
+				92AF55F81AFE88C600207347 /* Beacon.m */,
+				92AF55FA1AFE896100207347 /* Retailer.h */,
+				92AF55FB1AFE896100207347 /* Retailer.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -321,11 +321,11 @@
 			files = (
 				22A2C43E1AFDC8000001A545 /* BeaconTableViewController.m in Sources */,
 				22A2C41B1AFDC6D00001A545 /* AppDelegate.m in Sources */,
-				92AF55F91AFE88C600207347 /* ItemsModel.m in Sources */,
+				92AF55F91AFE88C600207347 /* Beacon.m in Sources */,
 				7BD274571AFE3A520049C1E2 /* CheckoutViewController.m in Sources */,
 				92AF55F61AFE886900207347 /* BaseModel.m in Sources */,
 				22A2C4471AFDED770001A545 /* BeaconViewController.m in Sources */,
-				92AF55FC1AFE896100207347 /* RetailersModel.m in Sources */,
+				92AF55FC1AFE896100207347 /* Retailer.m in Sources */,
 				22A2C4181AFDC6D00001A545 /* main.m in Sources */,
 				22A2C4411AFDCD0E0001A545 /* MapsViewController.m in Sources */,
 			);

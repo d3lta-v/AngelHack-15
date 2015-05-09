@@ -8,6 +8,8 @@
 
 #import "BaseModel.h"
 
-@interface RetailersModel : BaseModel
+@interface Retailer : BaseModel
+
++ (Retailer) getRetailerOfID
 
 @end
