@@ -11,5 +11,6 @@
 @interface Tutorial_ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *Background;
 @property (weak, nonatomic) IBOutlet UIButton *TappedOnScreen;
+- (IBAction)TappedScreen:(id)sender;
 
 @end

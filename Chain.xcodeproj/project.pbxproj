@@ -19,6 +19,11 @@
 		22A2C4491AFE1C000001A545 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A2C4481AFE1C000001A545 /* CoreBluetooth.framework */; };
 		22A2C44B1AFE1C0D0001A545 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A2C44A1AFE1C0D0001A545 /* CoreLocation.framework */; };
 		7B2EAF031AFE6E17007AA72C /* Tutorial ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EAF021AFE6E17007AA72C /* Tutorial ViewController.m */; };
+		7B2EAF3B1AFE8763007AA72C /* Tutorial01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EAF361AFE8763007AA72C /* Tutorial01.png */; };
+		7B2EAF3C1AFE8763007AA72C /* Tutorial02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EAF371AFE8763007AA72C /* Tutorial02.png */; };
+		7B2EAF3D1AFE8763007AA72C /* Tutorial03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EAF381AFE8763007AA72C /* Tutorial03.png */; };
+		7B2EAF3E1AFE8763007AA72C /* Tutorial04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EAF391AFE8763007AA72C /* Tutorial04.png */; };
+		7B2EAF3F1AFE8763007AA72C /* Tutorial05.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EAF3A1AFE8763007AA72C /* Tutorial05.png */; };
 		7BD274571AFE3A520049C1E2 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD274561AFE3A520049C1E2 /* CheckoutViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		22A2C44A1AFE1C0D0001A545 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7B2EAF011AFE6E17007AA72C /* Tutorial ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tutorial ViewController.h"; sourceTree = "<group>"; };
 		7B2EAF021AFE6E17007AA72C /* Tutorial ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tutorial ViewController.m"; sourceTree = "<group>"; };
+		7B2EAF361AFE8763007AA72C /* Tutorial01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial01.png; sourceTree = "<group>"; };
+		7B2EAF371AFE8763007AA72C /* Tutorial02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial02.png; sourceTree = "<group>"; };
+		7B2EAF381AFE8763007AA72C /* Tutorial03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial03.png; sourceTree = "<group>"; };
+		7B2EAF391AFE8763007AA72C /* Tutorial04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial04.png; sourceTree = "<group>"; };
+		7B2EAF3A1AFE8763007AA72C /* Tutorial05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial05.png; sourceTree = "<group>"; };
 		7BD274551AFE3A520049C1E2 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7BD274561AFE3A520049C1E2 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +96,11 @@
 				22A2C4141AFDC6D00001A545 /* Chain */,
 				22A2C42E1AFDC6D00001A545 /* ChainTests */,
 				22A2C4131AFDC6D00001A545 /* Products */,
+				7B2EAF361AFE8763007AA72C /* Tutorial01.png */,
+				7B2EAF371AFE8763007AA72C /* Tutorial02.png */,
+				7B2EAF381AFE8763007AA72C /* Tutorial03.png */,
+				7B2EAF391AFE8763007AA72C /* Tutorial04.png */,
+				7B2EAF3A1AFE8763007AA72C /* Tutorial05.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,7 +250,12 @@
 			files = (
 				22A2C4211AFDC6D00001A545 /* Main.storyboard in Resources */,
 				22A2C4261AFDC6D00001A545 /* LaunchScreen.xib in Resources */,
+				7B2EAF3F1AFE8763007AA72C /* Tutorial05.png in Resources */,
+				7B2EAF3D1AFE8763007AA72C /* Tutorial03.png in Resources */,
+				7B2EAF3E1AFE8763007AA72C /* Tutorial04.png in Resources */,
+				7B2EAF3B1AFE8763007AA72C /* Tutorial01.png in Resources */,
 				22A2C4231AFDC6D00001A545 /* Images.xcassets in Resources */,
+				7B2EAF3C1AFE8763007AA72C /* Tutorial02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
