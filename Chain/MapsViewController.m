@@ -20,7 +20,6 @@
     // Determine Condition Values
     NSString *one = @"1";
     NSString *two = @"2";
-    NSString *three = @"3";
     // Retrieve Value (1, 2, 3) That determines location. Key = "currentLocation"
     NSString *location = [ [NSUserDefaults standardUserDefaults]stringForKey:@"currentLocation"];
     //If location is one
