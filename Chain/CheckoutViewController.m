@@ -20,8 +20,8 @@
     /* values
      Item bought or not,
      */
-    NSString *savedValue = [[NSUserDefaults standardUserDefaults]
-                            stringForKey:@"preferenceName"];
+   // NSString *savedValue = [[NSUserDefaults standardUserDefaults]
+                           // stringForKey:@"preferenceName"];
 
 }
 
