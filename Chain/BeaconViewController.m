@@ -173,9 +173,11 @@
         }
         else if ([minor isEqual:@"2"]) {
             // ID: 1 (INC)
+#warning If its inc
         }
         else if ([minor isEqual:@"3"]) {
             // ID: 2 (Betalabs)
+#warning If its Betalabs
         }
         else if ([minor isEqual:@"4"]) {
             
@@ -187,6 +189,7 @@
     // Sports complex
     else if ([major isEqual:@"4"]) {
         // ID: 3 (Sports Complex)
+#warning If its Sports Complex
     }
     else
     {
