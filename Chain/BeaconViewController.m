@@ -24,7 +24,98 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //Load Values for items
+#warning Values Of items
+    NSString *DaltonCount = @"0"; // Number of product user wants to buy
+    NSString *DaltonPrice = @"135"; // Price in Dollars
     
+    NSString *ZiyueCount = @"0"; // Number of product user wants to buy
+    NSString *ZiyuePrice = @"25"; // Price in Dollars
+    
+    NSString *SiddhantCount = @"0"; // Number of product user wants to buy
+    NSString *SiddhantPrice = @"45"; // Price in Dollars
+    
+    NSString *LhuCount = @"0"; // Number of product user wants to buy
+    NSString *LhuPrice = @"195"; // Price in Dollars
+    
+    NSString *DingWenCount = @"0"; // Number of product user wants to buy
+    NSString *DingWenPrice = @"45"; // Price in Dollars
+    
+    NSString *imacCount = @"0"; // Number of product user wants to buy
+    NSString *imacPrice = @"3388"; // Price in Dollars
+    
+    NSString *mbaCount = @"0"; // Number of product user wants to buy
+    NSString *mbaPrice = @"1328"; // Price in Dollars
+    
+    NSString *mbpCount = @"0"; // Number of product user wants to buy
+    NSString *mbpPrice = @"2688"; // Price in Dollars
+    
+    NSString *MacMiniCount = @"0"; // Number of product user wants to buy
+    NSString *MacMiniPrice = @"1328"; // Price in Dollars
+    
+    NSString *MacProCount = @"0"; // Number of product user wants to buy
+    NSString *MacProPrice = @"2688"; // Price in Dollars
+    
+    NSString *JurvisCount = @"0"; // Number of product user wants to buy
+    NSString *JurvisPrice = @"149"; // Price in Dollars
+    
+    NSString *AureliusCount = @"0"; // Number of product user wants to buy
+    NSString *AureliusPrice = @"579"; // Price in Dollars
+    
+    NSString *AxiosCount = @"0"; // Number of product user wants to buy
+    NSString *AxiosPrice = @"45"; // Price in Dollars
+    
+    NSString *YoshiCount = @"0"; // Number of product user wants to buy
+    NSString *YoshiPrice = @"359"; // Price in Dollars
+    
+    NSString *ShiHuiCount = @"0"; // Number of product user wants to buy
+    NSString *ShiHuiPrice = @"88"; // Price in Dollars
+    //Saving all these values to NSUserDefaults for retrieval
+    [[NSUserDefaults standardUserDefaults] setObject:DaltonCount forKey:@"DC"];
+    [[NSUserDefaults standardUserDefaults] setObject:DaltonPrice forKey:@"DP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:ZiyueCount forKey:@"ZC"];
+    [[NSUserDefaults standardUserDefaults] setObject:ZiyuePrice forKey:@"ZP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:SiddhantCount forKey:@"SC"];
+    [[NSUserDefaults standardUserDefaults] setObject:SiddhantPrice forKey:@"SP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:LhuCount forKey:@"LC"];
+    [[NSUserDefaults standardUserDefaults] setObject:LhuPrice forKey:@"LP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:DingWenCount forKey:@"DWC"];
+    [[NSUserDefaults standardUserDefaults] setObject:DingWenPrice forKey:@"DWP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:imacCount forKey:@"IMDC"];
+    [[NSUserDefaults standardUserDefaults] setObject:imacPrice forKey:@"IMDP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:mbaCount forKey:@"MBAC"];
+    [[NSUserDefaults standardUserDefaults] setObject:mbaPrice forKey:@"MBAP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:mbpCount forKey:@"MBPC"];
+    [[NSUserDefaults standardUserDefaults] setObject:mbpPrice forKey:@"MBPP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:MacMiniCount forKey:@"MMC"];
+    [[NSUserDefaults standardUserDefaults] setObject:MacMiniPrice forKey:@"MMP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:MacProCount forKey:@"MPC"];
+    [[NSUserDefaults standardUserDefaults] setObject:MacProPrice forKey:@"MPP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:JurvisCount forKey:@"JC"];
+    [[NSUserDefaults standardUserDefaults] setObject:JurvisPrice forKey:@"JP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:AureliusCount forKey:@"AC"];
+    [[NSUserDefaults standardUserDefaults] setObject:AureliusPrice forKey:@"AP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:AxiosCount forKey:@"AXC"];
+    [[NSUserDefaults standardUserDefaults] setObject:AxiosPrice forKey:@"AXP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:YoshiCount forKey:@"YC"];
+    [[NSUserDefaults standardUserDefaults] setObject:YoshiPrice forKey:@"YP"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:ShiHuiCount forKey:@"SHC"];
+    [[NSUserDefaults standardUserDefaults] setObject:ShiHuiPrice forKey:@"SHP"];
+#warning END OF Values Of items
     // Init no beacons view
     noBeaconsView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NoBeacons"]];
     noBeaconsView.frame = CGRectMake(0, 0, self.containerView.frame.size.width, self.containerView.frame.size.height); // May be buggy, I have no idea on x,y coords for implementing with overlaying containerView
