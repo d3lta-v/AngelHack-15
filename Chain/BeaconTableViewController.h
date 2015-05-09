@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BeaconTableViewController.h
 //  Chain
 //
 //  Created by Pan Ziyue on 9/5/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BeaconTableViewController : UITableViewController
 
 @end
-
