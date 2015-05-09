@@ -18,6 +18,7 @@
 		22A2C4471AFDED770001A545 /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2C4461AFDED770001A545 /* BeaconViewController.m */; };
 		22A2C4491AFE1C000001A545 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A2C4481AFE1C000001A545 /* CoreBluetooth.framework */; };
 		22A2C44B1AFE1C0D0001A545 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A2C44A1AFE1C0D0001A545 /* CoreLocation.framework */; };
+		7B2EAF031AFE6E17007AA72C /* Tutorial ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EAF021AFE6E17007AA72C /* Tutorial ViewController.m */; };
 		7BD274571AFE3A520049C1E2 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD274561AFE3A520049C1E2 /* CheckoutViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		22A2C4461AFDED770001A545 /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 		22A2C4481AFE1C000001A545 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		22A2C44A1AFE1C0D0001A545 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7B2EAF011AFE6E17007AA72C /* Tutorial ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tutorial ViewController.h"; sourceTree = "<group>"; };
+		7B2EAF021AFE6E17007AA72C /* Tutorial ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tutorial ViewController.m"; sourceTree = "<group>"; };
 		7BD274551AFE3A520049C1E2 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7BD274561AFE3A520049C1E2 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +112,8 @@
 				7BD274551AFE3A520049C1E2 /* CheckoutViewController.h */,
 				7BD274561AFE3A520049C1E2 /* CheckoutViewController.m */,
 				22A2C41F1AFDC6D00001A545 /* Main.storyboard */,
+				7B2EAF011AFE6E17007AA72C /* Tutorial ViewController.h */,
+				7B2EAF021AFE6E17007AA72C /* Tutorial ViewController.m */,
 				22A2C4221AFDC6D00001A545 /* Images.xcassets */,
 				22A2C4241AFDC6D00001A545 /* LaunchScreen.xib */,
 				22A2C4151AFDC6D00001A545 /* Supporting Files */,
@@ -251,6 +256,7 @@
 				22A2C43E1AFDC8000001A545 /* BeaconTableViewController.m in Sources */,
 				22A2C41B1AFDC6D00001A545 /* AppDelegate.m in Sources */,
 				7BD274571AFE3A520049C1E2 /* CheckoutViewController.m in Sources */,
+				7B2EAF031AFE6E17007AA72C /* Tutorial ViewController.m in Sources */,
 				22A2C4471AFDED770001A545 /* BeaconViewController.m in Sources */,
 				22A2C4181AFDC6D00001A545 /* main.m in Sources */,
 				22A2C4411AFDCD0E0001A545 /* MapsViewController.m in Sources */,
