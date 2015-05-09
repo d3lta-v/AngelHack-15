@@ -16,18 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // load the values
-    /* values
-     Item bought or not,
-     */
-   // NSString *savedValue = [[NSUserDefaults standardUserDefaults]
-                           // stringForKey:@"preferenceName"];
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSString *TotalPrice = @"0";
+    [[NSUserDefaults standardUserDefaults] setObject:TotalPrice forKey:@"TP"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
 }
 @end
 /*
