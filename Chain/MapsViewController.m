@@ -14,9 +14,31 @@
 
 @implementation MapsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Determine Condition Values
+    NSString *one = @"1";
+    NSString *two = @"2";
+    NSString *three = @"3";
+    // Retrieve Value (1, 2, 3) That determines location. Key = "currentLocation"
+    NSString *location = [ [NSUserDefaults standardUserDefaults]stringForKey:@"currentLocation"];
+    //If location is one
+        if ([location isEqualToString:one])
+        {
+            //Display Image as map with one highlighted
+            //UIImage *map = [UIImage imageNamed:@"map1"];
+        }
+        else if ([location isEqualToString:two])
+        {
+            //Display Image as map with two highlighted
+            //UIImage *map = [UIImage imageNamed:@"map2"];
+        }
+        else
+        {
+            //Display Image as map with three highlited
+            //UIImage *map = [UIImage imageNamed:@"map3"];
+        }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,3 +57,16 @@
 */
 
 @end
+/*
+ NSUserDefaults
+ To Save :
+ NSString *valueToSave = @"someValue";
+ [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"preferenceName"];
+ [[NSUserDefaults standardUserDefaults] synchronize];
+ To Retrieve :
+ NSString *savedValue = [[NSUserDefaults standardUserDefaults]
+ stringForKey:@"preferenceName"];
+ For Int :
+ //[[NSUserDefaults standardUserDefaults] setInteger:HighScore forKey:@"HighScore"];
+ ////NSInteger highScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScore"];
+*/
