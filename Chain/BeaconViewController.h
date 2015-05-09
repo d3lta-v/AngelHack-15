@@ -17,4 +17,13 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CBCentralManager *bluetoothManager;
 
+// Outlets
+@property (strong, nonatomic) IBOutlet UIView *containerView;
+
+// Buttons (IBActions)
+@property (strong, nonatomic) IBOutlet UIButton *mapsButtonPressed;
+@property (strong, nonatomic) IBOutlet UIButton *announceButtonPressed;
+@property (strong, nonatomic) IBOutlet UIButton *cartButtonPressed;
+
+
 @end
