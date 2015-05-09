@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BeaconViewController : UIViewController
+@interface BeaconViewController : UIViewController <CLLocationManagerDelegate, CBCentralManagerDelegate>
+
+// Managers
+@property (strong, nonatomic) CLBeaconRegion *myBeaconRegion;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CBCentralManager *bluetoothManager;
 
 @end
