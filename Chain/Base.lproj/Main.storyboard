@@ -48,10 +48,30 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="irk-xX-11O" kind="presentation" identifier="NoBluetooth" id="kqf-MO-qdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cY-7I-q3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="880" y="-36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7gj-Jk-qfK">
+            <objects>
+                <navigationController id="irk-xX-11O" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cjx-g6-AQG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gpC-TP-q7S" kind="relationship" relationship="rootViewController" id="C85-3D-pXl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NF-ya-9XO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="-672"/>
         </scene>
         <!--Beacon Table View Controller-->
         <scene sceneID="AzX-MB-kf2">
@@ -62,22 +82,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="YPE-vk-ytQ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="155" id="YPE-vk-ytQ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YPE-vk-ytQ" id="yjG-fi-8O0">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Be-PAy">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxt-nt-wgb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                                        </imageView>
+                                        <stepper opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Be-PAy">
                                             <rect key="frame" x="81" y="83" width="94" height="29"/>
                                             <color key="tintColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </stepper>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-qc-07a">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-qc-07a">
                                             <rect key="frame" x="208" y="83" width="31" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dingwen Chair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRt-jX-IG7">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dingwen Chair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRt-jX-IG7">
                                             <rect key="frame" x="95" y="42" width="131" height="33"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -97,6 +120,62 @@
             </objects>
             <point key="canvasLocation" x="1311" y="-70"/>
         </scene>
+        <!--No Bluetooth Available-->
+        <scene sceneID="ydx-6G-wTt">
+            <objects>
+                <viewController id="gpC-TP-q7S" customClass="NoBluetoothViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIh-fw-Gkw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Thu-cH-Inc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y4r-hU-JSp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bluetooth Enabled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1t-9Z-GAb">
+                                <rect key="frame" x="50" y="376" width="221" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This app requires Bluetooth to be enabled and that your device must support Bluetooth 4.0" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="StV-AZ-Lwu">
+                                <rect key="frame" x="16" y="419" width="288" height="87"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoBluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="J73-TV-fBh">
+                                <rect key="frame" x="102" y="122" width="116" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="nIH-Xd-ELO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="221" id="tOb-Do-fZY"/>
+                                    <constraint firstAttribute="height" constant="221" id="vSL-iw-Wzc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i1t-9Z-GAb" secondAttribute="trailing" constant="49" id="408-3Y-Hcv"/>
+                            <constraint firstAttribute="bottom" secondItem="StV-AZ-Lwu" secondAttribute="bottom" constant="62" id="4Y9-jV-IGv"/>
+                            <constraint firstItem="i1t-9Z-GAb" firstAttribute="top" secondItem="J73-TV-fBh" secondAttribute="bottom" constant="33" id="Eeu-2q-viv"/>
+                            <constraint firstAttribute="centerX" secondItem="J73-TV-fBh" secondAttribute="centerX" id="dIc-VR-y8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="StV-AZ-Lwu" secondAttribute="trailing" constant="16" id="gYz-Vh-jvW"/>
+                            <constraint firstAttribute="centerY" secondItem="J73-TV-fBh" secondAttribute="centerY" constant="51.5" id="lnN-zj-gVc"/>
+                            <constraint firstItem="StV-AZ-Lwu" firstAttribute="leading" secondItem="y4r-hU-JSp" secondAttribute="leading" constant="16" id="lt2-Cx-lye"/>
+                            <constraint firstItem="StV-AZ-Lwu" firstAttribute="top" secondItem="i1t-9Z-GAb" secondAttribute="bottom" constant="15" id="pMu-uE-vbW"/>
+                            <constraint firstItem="i1t-9Z-GAb" firstAttribute="leading" secondItem="y4r-hU-JSp" secondAttribute="leading" constant="50" id="t5Z-hH-UeJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="No Bluetooth Available" id="bnd-9n-Bad"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7u3-Rc-w9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="-672"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="NoBluetooth" width="153" height="290"/>
+    </resources>
     <color key="tintColor" red="0.28235294117647058" green="0.80000000000000004" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
