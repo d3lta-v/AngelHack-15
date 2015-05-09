@@ -13,6 +13,8 @@
     NSString *locationString;
     NSString *linkURL;
     bool inRegion;
+    
+    UIImageView *noBeaconsView;
 }
 
 @end
@@ -22,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Init no beacons view
+    noBeaconsView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NoBeacons"]];
+    noBeaconsView.frame = CGRectMake(0, 0, self.containerView.frame.size.width, self.containerView.frame.size.height); // May be buggy, I have no idea on x,y coords for implementing with overlaying containerView
     
     // Check if bluetooth is on or off
     [self startBluetoothStatusMonitoring];
@@ -45,6 +51,7 @@
     // Did enter region
     NSLog(@"didEnterRegion Triggered!");
     [self.locationManager startRangingBeaconsInRegion:self.myBeaconRegion];
+    [self.view addSubview:noBeaconsView];
 }
 
 -(void)locationManager:(CLLocationManager*)manager didExitRegion:(CLRegion*)region
@@ -52,9 +59,9 @@
     // No signal
     NSLog(@"didExitRegion Triggered! Stopping ranging services...");
     [self.locationManager stopRangingBeaconsInRegion:self.myBeaconRegion];
-    //_signalIndicator.image = [PlacesKit imageOfNone];
-    //_inferredLocation.text = @"No Signal";
-    //_inferredInfo.text = @"The app detected no Bluetooth signals from the iBeacons. You might not be in the beacon coverage zone. Please walk around SST to double check your connection.";
+    if ([self.view.subviews containsObject:noBeaconsView]) {
+        [noBeaconsView removeFromSuperview];
+    }
 }
 
 - (void) locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region
@@ -68,14 +75,15 @@
         case CLRegionStateInside: {
             NSLog(@"Inside region, beginning ranging");
             [self.locationManager startRangingBeaconsInRegion:self.myBeaconRegion];
+            if ([self.view.subviews containsObject:noBeaconsView]) {
+                [noBeaconsView removeFromSuperview];
+            }
         }
             break;
         case CLRegionStateOutside: {
             NSLog(@"Outside region");
             // No beacons are in range
-            //_signalIndicator.image = [PlacesKit imageOfNone];
-            //_nferredLocation.text = @"No Signal";
-            //_inferredInfo.text = @"The app detected no Bluetooth signals from the iBeacons. You might not be in the beacon coverage zone. Please walk around SST to double check your connection.";
+            [self.view addSubview:noBeaconsView];
         }
             break;
         case CLRegionStateUnknown:
@@ -84,7 +92,6 @@
         default:
             // stop ranging beacons, etc
             NSLog(@"Region unknown");
-            //[self.locationManager stopRangingBeaconsInRegion:self.myBeaconRegion];
     }
 }
 
@@ -139,11 +146,12 @@
 {
     locationString = [[NSString alloc] init];
     
+    NSLog(@"Major:%@, Minor: %@", major, minor); // Echo major/minor combo on console
+    
     // Admin block
     if ([major isEqual:@"1"]) {
         if ([minor isEqual:@"1"]) {
-            locationString = [locationString stringByAppendingString:@"SST Wall"];
-            linkURL = @"http://www.sst.edu.sg";
+            
         }
         else
             //locationString=@"Weak Signal";
@@ -164,31 +172,27 @@
 
         }
         else if ([minor isEqual:@"2"]) {
-            
+            // ID: 1 (INC)
         }
         else if ([minor isEqual:@"3"]) {
-            
+            // ID: 2 (Betalabs)
         }
         else if ([minor isEqual:@"4"]) {
             
         }
         else {
-            //locationString=@"Polling...";
             goto unimplemented;
         }
     }
     // Sports complex
     else if ([major isEqual:@"4"]) {
-        
+        // ID: 3 (Sports Complex)
     }
     else
     {
     unimplemented:
-        NSLog(@"Not implemented beacon with major,minor: %@, %@", major, minor);
+        NSLog(@"Unimplemented beacon with major,minor: %@, %@", major, minor);
     }
-    
-    // Finally set the text
-    //_inferredLocation.text = locationString;
 }
 
 #pragma mark - Bluetooth Controller Delegate
