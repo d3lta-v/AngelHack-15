@@ -2,7 +2,7 @@
 //  BeaconViewController.m
 //  Chain
 //
-//  Created by Pan Ziyue on 9/5/15.
+//  Created by Pan Ziyue & Dalton on 9/5/15.
 //  Copyright (c) 2015 StatiX Industries. All rights reserved.
 //
 
