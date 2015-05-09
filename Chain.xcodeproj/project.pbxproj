@@ -152,7 +152,6 @@
 				22A2C40E1AFDC6D00001A545 /* Sources */,
 				22A2C40F1AFDC6D00001A545 /* Frameworks */,
 				22A2C4101AFDC6D00001A545 /* Resources */,
-				22A2C43B1AFDC6FB0001A545 /* Automate Build Number Increment */,
 			);
 			buildRules = (
 			);
@@ -243,23 +242,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22A2C43B1AFDC6FB0001A545 /* Automate Build Number Increment */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Automate Build Number Increment";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22A2C40E1AFDC6D00001A545 /* Sources */ = {
